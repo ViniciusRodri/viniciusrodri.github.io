@@ -317,6 +317,10 @@ body {
   justify-content: center;
 }
 
+  .portfolio__section a {
+    display: none;
+  }
+
 .swiper {
   display: grid;
   grid-column: 1 / 5; 
@@ -404,7 +408,6 @@ body {
   flex-wrap: wrap;
 }
 
-
 .card {
   position: relative;
   width: 200px;
@@ -477,7 +480,7 @@ body {
 
 .card__content p {
   font-size: .8rem;
-  margin: 10px;
+  margin: 8px;
   text-align: center;
 }
 
@@ -654,7 +657,7 @@ body {
 
 @media (max-width: 800px) {
   body {
-    display: block;
+  display: block;
   max-height: 800px;
   max-width: 800px;  
   margin: 0;
@@ -680,6 +683,57 @@ body {
 
   .photo {
     display: none;
+  }
+
+  .portfolio__section a {
+    display: block;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+  }
+
+  .section__title {
+    width: 300px;
+  }
+
+  .section__subtitle {
+    width: 300px;
+    margin: 20px;
+  }
+
+  .card__one__image img {
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  .card__port {
+  font-family: 'Montserrat', sans-serif;
+    max-height: 800px;
+    max-width: 800px;  
+    margin-bottom: 50px;
+  }
+
+  .card__image img {
+    width: 320px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px -15px #43FF88;
+  }
+
+  .card__info h3 {
+    padding: 10px;
+  }
+
+  .card__info p {
+    padding: 10px;
+  }
+
+  .card__button {
+    width: 200px;
+    margin: 20px;
+    margin-top: 10px;
   }
 
   .icon1 img, .icon2 img {
@@ -744,11 +798,6 @@ body {
     font-size: 9px;
   }
 
-  .portfolio__section {
-    display: none;
-  }
-
-
   .section__title {
     font-size: 30px;
     margin: 0;
@@ -764,6 +813,26 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+  }
+
+  .card .face {
+    transition: none;
+    transform: none;
+  }
+
+  .card .face.back {
+   display: none;
+   transform: none;
+  }
+
+  .card:hover .face.front {
+    transition: none;
+    transform: none;
+  }
+
+  .card:hover .face.back {
+    transition: none;
+    transform: none;
   }
 
   .contact__section {
